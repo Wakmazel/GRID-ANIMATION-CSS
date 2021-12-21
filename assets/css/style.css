@@ -1,0 +1,283 @@
+:root {
+  --primary: white;
+  --bg: black;
+  --secondaire: rgb(0, 176, 120);
+  --marge: 120px;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero {
+  background: var(--bg);
+  padding: 0px var(--marge);
+  height: 100vh;
+}
+
+.hero .navbar {
+  display: -ms-grid;
+  display: grid;
+  margin: 45px 0px;
+  -ms-grid-columns: 20% 60% 20%;
+      grid-template-columns: 20% 60% 20%;
+  color: var(--primary);
+}
+
+.hero .navbar .left p {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.hero .navbar .left p span {
+  color: var(--secondaire);
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.hero .navbar .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.hero .navbar .center li {
+  list-style: none;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.hero .navbar .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.hero .navbar .right div {
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.hero .navbar .right .btn-try {
+  background: var(--primary);
+  color: var(--bg);
+  padding: 10px 10px;
+  font-weight: 500;
+  text-align: center;
+  width: 200px;
+  border-radius: 100px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.hero .navbar .right .btn-try:hover {
+  background: var(--secondaire);
+}
+
+.hero .hero-main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+  height: 70vh;
+}
+
+.hero .hero-main .left {
+  position: relative;
+}
+
+.hero .hero-main .left h1 {
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 5rem;
+  line-height: 5rem;
+}
+
+.hero .hero-main .left .find {
+  position: absolute;
+  z-index: 5;
+  height: 120px;
+  width: 450px;
+  bottom: 75px;
+  right: -70px;
+  background: var(--primary);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+}
+
+.hero .hero-main .left .find button {
+  background: var(--secondaire);
+  border: none;
+  font-size: 32px;
+  font-weight: 500;
+  outline: none;
+}
+
+.hero .hero-main .left .find input {
+  outline: none;
+  border: solid 3px var(--secondaire);
+  font-size: 20px;
+  text-align: center;
+  background: #effff3;
+}
+
+.hero .hero-main .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.hero .hero-main .right .item2 div,
+.hero .hero-main .right .item3 div {
+  padding-bottom: 45px !important;
+  padding-left: 30px !important;
+}
+
+.hero .hero-main .right .item1 .left {
+  padding-left: 60px !important;
+}
+
+.hero .hero-main .right .right-item {
+  position: relative;
+  width: 33%;
+  height: 68vh;
+  z-index: 1;
+}
+
+.hero .hero-main .right .right-item .square {
+  position: absolute;
+  width: 100px;
+  height: 70px;
+  background: #082e3c;
+  bottom: 60px;
+  left: 0;
+}
+
+.hero .hero-main .right .right-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  border-radius: 15px;
+  position: relative;
+  z-index: 0;
+}
+
+.hero .hero-main .right .right-item .container {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  background: #060606;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.852)), color-stop(62%, rgba(0, 0, 0, 0.0735645)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.852) 0%, rgba(0, 0, 0, 0.0735645) 62%);
+}
+
+.hero .hero-main .right .right-item .container .item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: var(--primary);
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 40px;
+  padding: 20px;
+}
+
+.hero .hero-main .right .right-item .container .item .left {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.hero .hero-main .right .right-item .container .item .left span {
+  visibility: hidden;
+}
+
+.hero .hero-main .right .right-item .container .item .right p {
+  font-size: 45px;
+  padding: 0;
+  margin: 0;
+}
+
+.hero .hero-main .right .right-item .container .item .right p span {
+  font-size: 15px;
+}
+
+.hero .hero-main .right .right-item .right {
+  visibility: hidden;
+}
+
+.hero .hero-main .right .right-item:hover {
+  width: 100%;
+}
+
+.hero .hero-main .right .right-item:hover .square {
+  visibility: hidden;
+}
+
+.hero .hero-main .right .right-item:hover .right {
+  visibility: visible;
+}
+
+.hero .hero-main .right .right-item:hover .container .item .left {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.hero .hero-main .right .right-item:hover .container .item .left span {
+  visibility: visible;
+}
+
+.active {
+  width: 100% !important;
+}
+/*# sourceMappingURL=style.css.map */
